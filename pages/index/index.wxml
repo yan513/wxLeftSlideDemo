@@ -1,0 +1,6 @@
+<view wx:for="{{items}}" wx:key="" class='item {{delIndex==index?"touch-move":""}}' data-index='{{index}}' bindtouchstart='touchStart' bindtouchmove='touchMove'>
+  <view class='content'>
+    {{item}}
+  </view>
+  <view class='del' data-index='{{index}}' catchtap='del'>删除</view>
+</view>
